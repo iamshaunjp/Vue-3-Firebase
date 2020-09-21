@@ -3,9 +3,9 @@ const app = Vue.createApp({
   // template: '<h2>I am the template</h2>',
   data() {
     return {
-      title: 'Name of the Wind',
+      title: 'The Way of Kings',
       author: 'Brandon Sanderson',
-      age: [1,2,3]
+      age: 45
     }
   }
 })

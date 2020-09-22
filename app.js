@@ -14,8 +14,10 @@ const app = Vue.createApp({
       this.showBooks =  !this.showBooks
     },
     handleEvent(e, data) {
-      console.log(e)
-      console.log(data)
+      console.log(e.type, e)
+      if (data) {
+        console.log(data)
+      }
     },
     handleMousemove(e) {
       this.x = e.offsetX

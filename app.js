@@ -5,7 +5,7 @@ const app = Vue.createApp({
       books: [
         { title: 'name of the wind', author: 'patrick rothfuss' },
         { title: 'the way of kings', author: 'brandon sanderson' },
-        { title: 'something', author: 'something' },
+        { title: 'the final empire', author: 'brandon sanderson' },
       ],
     }
   },

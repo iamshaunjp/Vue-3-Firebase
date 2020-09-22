@@ -19,9 +19,14 @@
   <h1>Hello, Vue :)</h1>
 
   <div id="app">
+    <!-- attribute binding -->
+    <!-- <a v-bind:href="url">Best website ever!</a> -->
+    <a :href="url">Best website ever!</a>
+
     <div v-if="showBooks">
       <ul>
         <li v-for="book in books">
+          <img :src="book.img" :alt="book.title">
           <h3>{{ book.title }}</h3>
           <p>{{ book.author }}</p>
         </li>

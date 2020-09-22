@@ -43,6 +43,10 @@
           <p>{{ book.author }}</p>
         </li>
       </ul>
+      <p>Your fav books:</p>
+      <ul>
+        <li v-for="book in filteredBooks">{{ book.title }} by {{ book.author }}</li>
+      </ul>
     </div>
     <div v-else>
       <p>Click the button below to show books</p>

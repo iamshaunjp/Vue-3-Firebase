@@ -21,6 +21,11 @@ const app = Vue.createApp({
       // } else {
       //   book.isFav = true;
       // }
+    },
+  },
+  computed: {
+    filteredBooks() {
+      return this.books.filter(book => book.isFav)
     }
   }
 })

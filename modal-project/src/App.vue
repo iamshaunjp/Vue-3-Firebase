@@ -15,6 +15,11 @@
 </template>
 
 <script>
+// challenge
+//   - create an extra button to open a different modal
+//   - use the same modal component but pass in a different template (slot)
+//   - use a different method (e.g. toggleModalTwo) and data (e.g. showModalTwo)
+
 import Modal from './components/Modal'
 
 export default {

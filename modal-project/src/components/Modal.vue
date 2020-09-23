@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .modal {
     width: 400px;
     padding: 20px;

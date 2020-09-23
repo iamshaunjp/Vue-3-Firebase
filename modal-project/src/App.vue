@@ -1,7 +1,8 @@
 <template>
   <h1>{{ title }}</h1>
   <p>Welcome...</p>
-  <Modal />
+  <!-- <Modal heading="Sign up for the Givaway!" text="Grab your ninja swag for half price!" /> -->
+  <Modal :heading="heading" :text="text" />
 </template>
 
 <script>
@@ -12,7 +13,9 @@ export default {
   components: { Modal },
   data() {
     return {
-      title: 'My First Vue App!'
+      title: 'My First Vue App!',
+      heading: 'Sign up for the Givaway!',
+      text: 'Grab your ninja swag for half price!'
     }
   }
 }

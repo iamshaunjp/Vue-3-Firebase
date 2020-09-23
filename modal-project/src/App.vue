@@ -67,21 +67,4 @@ h1 {
   display: inline-block;
   padding-bottom: 10px;
 }
-a {
-  color: inherit;
-  padding: 8px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  text-decoration: none;
-  margin: 10px;
-}
-button {
-  background: #bbb;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  margin: 10px;
-  font-size: 16px;
-  color: #333;
-}
 </style>

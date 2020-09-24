@@ -44,6 +44,7 @@ export default {
     font-size: 16px;
     letter-spacing: 1px;
     cursor: pointer;
+    margin: 10px;
   }
   button[disabled] {
     opacity: 0.2;

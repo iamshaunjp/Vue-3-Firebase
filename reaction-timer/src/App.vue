@@ -6,6 +6,9 @@
 </template>
 
 <script>
+// when the game ends, show the results component
+// output the score inside the results component
+
 import Block from './components/Block'
 
 export default {

@@ -1,7 +1,6 @@
 <template>
   <h1>Ninja Reaction Timer</h1>
   <button @click="start" :disabled="isPlaying">play</button>
-  <button @click="isPlaying = false" :disabled="!isPlaying">End game</button>
   <Block v-if="isPlaying" :delay="delay" />
 </template>
 

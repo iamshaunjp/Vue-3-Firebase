@@ -1,4 +1,4 @@
-# ninja-jobs
+# project-planner
 
 ## Project setup
 ```

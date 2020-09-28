@@ -20,12 +20,11 @@ export default {
   data() {
     return {
       showDetails: false,
+      uri: 'http://localhost:3000/projects/' + this.project.id
     }
   },
   methods: {
     deleteProject() {
-      let uri = 'http://localhost:3000/projects/' + this.project.id
-
       fetch(uri, { method: 'DELETE' })
         .then(() => this.$emit('delete', this.project.id))
         .catch(err => console.log(err))
@@ -42,7 +41,7 @@ export default {
     padding: 10px 20px;
     border-radius: 4px;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
-    border-left: 4px solid rgb(233, 0, 116);
+    border-left: 4px solid #e90074;
   }
   h3 {
     cursor: pointer;

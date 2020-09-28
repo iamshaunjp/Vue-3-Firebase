@@ -1,4 +1,4 @@
-# project-planner
+# dojo-blog
 
 ## Project setup
 ```

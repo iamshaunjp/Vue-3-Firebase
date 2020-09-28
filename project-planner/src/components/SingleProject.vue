@@ -34,8 +34,9 @@ export default {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ complete: !this.project.complete })
-      }).then(() => this.$emit('complete', this.project.id))
-        .catch(err => console.log(err))
+      }).then(() => {
+        this.$emit('complete', this.project.id)
+      }).catch(err => console.log(err))
     }
   }
   

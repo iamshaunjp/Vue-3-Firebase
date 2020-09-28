@@ -17,15 +17,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      current: 'all'
-    }
-  },
+  props: ['current'],
   methods: {
     updateFilter(by) {
-      this.current = by
-      this.$emit('onFilterChange', by)
+      this.$emit('filterChange', by)
     }
   }
 }

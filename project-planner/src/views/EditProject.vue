@@ -4,7 +4,7 @@
     <input type="text" v-model="title" required>
     <label>Details</label>
     <textarea v-model="details" required></textarea>
-    <button>Add Project</button>
+    <button>Update Project</button>
   </form>
 </template>
 

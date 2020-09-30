@@ -2,7 +2,7 @@
   <div v-if="error">{{ error }}</div>
   <div v-if="post" class="post">
     <h3>{{ post.title }}</h3>
-    <p class="pre">{{ post.content }}</p>
+    <p class="pre">{{ post.body }}</p>
   </div>
   <div v-else>Loading...</div>
 </template>

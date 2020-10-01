@@ -18,4 +18,4 @@ firebase.initializeApp(firebaseConfig)
 const projectFirestore = firebase.firestore()
 
 // export firestore
-export default { projectFirestore }
+export { projectFirestore }

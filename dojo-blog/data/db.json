@@ -19,6 +19,16 @@
         "webdev",
         "coding"
       ]
+    },
+    {
+      "id": 5707,
+      "title": "Make a modal using CSS",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis est ex, mollis id placerat eu, vulputate vehicula eros. Etiam nec urna egestas, pretium justo ut, luctus arcu. Maecenas dictum mi elit, sed molestie nulla pulvinar a. Sed pellentesque mauris quis ex aliquam tincidunt. Aliquam erat volutpat. Quisque auctor ante at felis maximus, commodo dapibus massa porttitor. Phasellus dignissim finibus placerat. Duis eu erat sem. Suspendisse venenatis molestie sapien a egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas in imperdiet mi. Etiam ac massa vel nulla lobortis viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMauris in erat tincidunt, dictum ligula id, vulputate nisl. Nam accumsan sodales mi, sed faucibus lacus pharetra id. Vestibulum interdum nibh orci, ut egestas risus venenatis vitae. Mauris tortor nisl, congue vulputate mauris sit amet, mattis pellentesque nunc. Proin imperdiet dapibus tincidunt. Cras at vehicula libero. Quisque lobortis quis est vel interdum. Duis molestie feugiat tellus sed sagittis. Duis eleifend lorem mauris, quis suscipit turpis luctus non.",
+      "tags": [
+        "css",
+        "webdev",
+        "coding"
+      ]
     }
   ]
 }

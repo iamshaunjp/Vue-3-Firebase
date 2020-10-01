@@ -16,7 +16,7 @@ const getPost = (id) => {
         throw Error('That post does not exist')
       }
       post.value = { ...res.data(), id: res.id }
-      console.log(post.value)
+      // console.log(post.value)
     }
     catch(err) {
       error.value = err.message

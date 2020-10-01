@@ -8,11 +8,12 @@ const getPosts = () => {
 
   const load = async () => {
     try {
-      const res = await projectFirestore.collection('posts').get()
-      // console.log(res.docs)
+      const res = await projectFirestore.collection('posts')
+        //.orderBy('title', 'desc')
+        .orderBy('createdAt', 'desc')  
+        .get()
 
       posts.value = res.docs.map(doc => {
-        // console.log(doc.data())
         return { ...doc.data(), id: doc.id }
       })
     }

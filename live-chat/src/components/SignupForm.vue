@@ -9,6 +9,7 @@
 
 <script>
 import { ref } from 'vue'
+import useSignup from '../composables/useSignup'
 
 export default {
   setup() {
@@ -17,8 +18,12 @@ export default {
     const email = ref('')
     const password = ref('')
 
-    const handleSubmit = () => {
-      console.log(displayName.value, email.value, password.value)
+    // useSignup
+    const { error, signup } = useSignup()
+
+    const handleSubmit = async () => {
+      await signup(email.value, password.value, displayName.value)
+      console.log('user signed up')
     }
 
     return { displayName, email, password, handleSubmit }

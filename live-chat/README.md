@@ -1,4 +1,4 @@
-# dojo-blog
+# live-chat
 
 ## Project setup
 ```

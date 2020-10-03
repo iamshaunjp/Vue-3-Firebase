@@ -11,7 +11,6 @@ const login = async (email, password) => {
     // FIREBASE WILL OVERHAUL IN THE FUTURE & EVERYTHING STILL WORKS
     const res = await projectAuth.signInWithEmailAndPassword(email, password)
     error.value = null
-    console.log(res)
     return res
   }
   catch(err) {

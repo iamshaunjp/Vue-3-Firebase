@@ -5,6 +5,9 @@ import router from './router'
 // import global css
 import './assets/main.css'
 
+// import firebase auth service
+import { projectAuth } from './firebase/config'
+
 let app
 
 projectAuth.onAuthStateChanged(() => {

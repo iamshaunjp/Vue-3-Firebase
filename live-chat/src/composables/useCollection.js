@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import { projectFirestore } from '../firebase/config'
 
 // declare the connection & refs inside the function
-// because the collection state is not global and
+// because the collection state is not global (like a user)
 // different collections may be used at once this way
 
 const useCollection = (collection) => {

@@ -3,7 +3,7 @@ import { projectFirestore } from '../firebase/config'
 
 const useCollection = (collection) => {
 
-  let error = ref(null)
+  const error = ref(null)
 
   // add a new document
   const addDoc = async (doc) => {

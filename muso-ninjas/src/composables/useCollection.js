@@ -22,7 +22,7 @@ const useCollection = (collection) => {
     }
   }
 
-  return { error, addDoc }
+  return { error, addDoc, isPending }
 
 }
 

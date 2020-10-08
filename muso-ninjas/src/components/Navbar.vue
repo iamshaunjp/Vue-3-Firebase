@@ -4,9 +4,13 @@
       <img src="@/assets/ninja.png"/>
       <h1><router-link :to="{ name: 'Home' }">Muso Ninjas</router-link></h1>
       <div class="links">
-        <button @click="handleClick">Logout</button>
-        <router-link class="btn" :to="{ name: 'Signup' }">Signup</router-link>
-        <router-link class="btn" :to="{ name: 'Login' }">Login</router-link>
+        <div v-if="user">
+          <button @click="handleClick">Logout</button>
+        </div>
+        <div v-else>
+          <router-link class="btn" :to="{ name: 'Signup' }">Signup</router-link>
+          <router-link class="btn" :to="{ name: 'Login' }">Login</router-link>
+        </div>
       </div>
     </nav>
   </div>
@@ -14,14 +18,17 @@
 
 <script>
 // challenge
-//   - fire a function called handleSubmit when the logout button is clicked
-//   - inside the function log the user out & then redirect to the login view
+//   - only show the logout button if we are logged in
+//   - only show the signup and login links if we are not logged in
+//   - use the getUser composable to help
 
+import getUser from '../composables/getUser'
 import useLogout from '../composables/useLogout'
 import { useRouter } from 'vue-router'
 
 export default {
   setup() {
+    const { user } = getUser()
     const { logout } = useLogout()
     const router = useRouter()
 
@@ -31,7 +38,7 @@ export default {
       router.push({ name: 'Login' })
     }
 
-    return { handleClick }
+    return { handleClick, user }
   }
 }
 </script>

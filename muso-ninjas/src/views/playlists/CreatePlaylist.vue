@@ -20,6 +20,7 @@ import { ref } from 'vue'
 import useStorage from '@/composables/useStorage'
 import useCollection from '@/composables/useCollection'
 import getUser from '@/composables/getUser'
+import { timestamp } from '@/firebase/config'
 
 export default {
   setup() {
@@ -44,7 +45,8 @@ export default {
           userName: user.value.displayName,
           coverUrl: url.value,
           filePath: filePath.value, // so we can delete it later
-          songs: []
+          songs: [],
+          createdAt: timestamp()
         })
         isPending.value = false
         if (!error.value) {

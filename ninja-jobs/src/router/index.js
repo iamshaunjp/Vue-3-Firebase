@@ -35,8 +35,8 @@ const routes = [
   // 404 catchall
   {
     path: '/:catchAll(.*)',
-    name: NotFound,
-    component: () => import('../views/NotFound.vue')
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 

@@ -35,7 +35,7 @@ const routes = [
   // 404 catchall
   {
     path: '/:catchAll(.*)',
-    name: NotFound,
+    name: 'NotFound',
     component: NotFound
   }
 ]

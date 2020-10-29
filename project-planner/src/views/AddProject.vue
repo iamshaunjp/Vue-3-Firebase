@@ -21,8 +21,7 @@ export default {
       let project = {
         title: this.title,
         details: this.details,
-        complete: false,
-        id: Math.floor(Math.random() * 10000)
+        complete: false
       }
       console.log(project)
   

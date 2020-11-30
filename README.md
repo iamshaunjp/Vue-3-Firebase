@@ -1,5 +1,9 @@
-# Build Apps with Vue 3 & Firebase
-All course files for the Vue 3 &amp; Firebase Udemy course.
+# Installing Dependencies
+Later in the course, when we use the Vue CLI, we will be using a package.json file to list project dependencies (Vue itself, Vue Router, plus 3rd party packages too). At this point in the course, to be sure the course files work correctly on your computer, you will need to:
 
-## How to use these files
-Each lesson has it's own branch in this repo. To see the code for a particular lesson, select that lesson from the branch drop-dow in the top-left of the screen. Then you can download the files by clicking on the green 'Code' button & selecting 'Download Zip'.
+1. Open the project folder in VS Code
+2. In the terminal, navigate to the root directory of the project
+3. Run the command **npm install** to install all the project dependencies
+4. Finally, you can run **npm run serve** to preview the project as normal in a browser
+
+This guide will make more sense when you reach a later point in the course :).

@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /playlists/{docId} {
+      allow read, create: if request.auth != null;
+      allow delete, update: if request.auth.uid == resource.data.userId;
+    }
+  }
+}

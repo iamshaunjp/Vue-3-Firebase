@@ -62,6 +62,5 @@ export default {
 .icon {
   color: #bbbbbb;
   cursor: pointer;
-  
 }
 </style>

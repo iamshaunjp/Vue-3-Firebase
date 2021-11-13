@@ -1,0 +1,21 @@
+{
+  "name": "idb",
+  "version": "3.0.2",
+  "description": "IndexedDB but with promises",
+  "main": "lib/node.js",
+  "module": "lib/idb.mjs",
+  "browser": "build/idb.js",
+  "typings": "lib/idb.d.ts",
+  "scripts": {
+    "build": "rollup lib/idb.mjs --file build/idb.js --format umd --name idb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakearchibald/indexeddb-promised.git"
+  },
+  "author": "Jake Archibald",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.0.2"
+  }
+}

@@ -16,17 +16,29 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import CreateBookForm from '@/components/CreateBookForm'
+import { ref } from 'vue'
+
+// firebase imports
+import { db } from '../firebase/config'
+import { collection, getDocs } from 'firebase/firestore'
 
 export default {
   name: 'Home',
   components: { CreateBookForm },
   setup() {
-    const books = ref([
-      { title: 'name of the wind', author: 'patrick rothfuss', isFav: false, id: '1' },
-      { title: 'the way of kings', author: 'brandon sanderson', isfav: false, id: '2' }
-    ])
+    const books = ref([])
+
+    const colRef = collection(db, 'books')
+
+    getDocs(colRef)
+      .then(snapshot => {
+        let docs = []
+        snapshot.docs.forEach(doc => {
+          docs.push({ ...doc.data(), id: doc.id })
+        })
+        books.value = docs
+      })
 
     return { books }
   }

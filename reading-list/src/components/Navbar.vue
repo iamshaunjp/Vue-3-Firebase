@@ -3,18 +3,21 @@
     <nav>
       <h1>My Book List</h1>
 
-      <!-- for logged in users -->
-      <div>
+      <!-- logged in users -->
+      <div v-if="user">
         <router-link to="/">Home</router-link>
         <button @click="handleClick">Logout</button>
       </div>
       
-      <!-- for logged out users -->
-      <div>
+      <!-- logged out users -->
+      <div v-if="!user">
         <router-link to="/login">Login</router-link>
         <router-link to="/signup">Signup</router-link>
       </div>
     </nav>
+    
+    <!-- show user email -->
+    <p v-if="user">logged in as {{ user.email }}</p>
   </div>
 </template>
 

@@ -15,7 +15,7 @@
         <router-link to="/signup">Signup</router-link>
       </div>
     </nav>
-    
+
     <!-- show user email -->
     <p v-if="user">logged in as {{ user.email }}</p>
   </div>
@@ -23,6 +23,8 @@
 
 <script>
 import getUser from '../composables/getUser'
+import { useRouter } from 'vue-router'
+import { watchEffect } from 'vue'
 
 // firebase imports
 import { auth } from '../firebase/config'
@@ -31,10 +33,17 @@ import { signOut } from 'firebase/auth'
 export default {
   setup() {
     const { user } = getUser()
+    const router = useRouter()
 
     const handleClick = () => {
       signOut(auth)
     }
+
+    watchEffect(() => {
+      if (!user.value) {
+        router.push('/login')
+      }
+    })
 
     return { handleClick, user }
   }
